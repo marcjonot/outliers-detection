@@ -7,19 +7,19 @@ Here is why IQR may match your requirements for your data science project:
 - **One dimensional** feature space. 
 
 The formula is:  
-$$ x>q1-k*iqr$$ and $$x<q3+k*iqr $$
+$$ x>q1-k*iqr $$ and $$ x<q3+k*iqr $$
 <u>with:</u>  
 - **q1** is the **first quartile** of the data. (25% of the data are between the minimum and q1). 
 - **q3** is the **third quartile** of the data. (75% of the data are between the minimum and q3).
-- **iqr** is the **Inter-Quartile Range**. $$iqr=q3-q1$$ 
-- <b>k</b> is the **coefficient** applied to iqr. $$k>0$$  
+- **iqr** is the **Inter-Quartile Range**. $$ iqr=q3-q1 $$ 
+- <b>k</b> is the **coefficient** applied to iqr. $$ k>0 $$  
 
 <u>Let's see how IQR detection works with a box plot:</u>
 ![IQR detection schema.](./../doc/img/iqr_schema.svg)
   
 <u>Here is the main thing to remember:</u>
-- Every value under $q1-k*iqr$ is considered as outliers.
-- Every value over $q3+k*iqr$ is considered as outliers.
+- Every value under $ q1-k*iqr $ is considered as outliers.
+- Every value over $ q3+k*iqr $ is considered as outliers.
 - If **k increase**, outliers range decreased. Then, there is **less** value considered as an **outlier**.
 - If **k decrease**, outliers range increased. Then, there is **more** value considered as an **outlier**.  
 
