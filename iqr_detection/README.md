@@ -14,7 +14,8 @@ $'x>q1-k*iqr '$ and $' x<q3+k*iqr '$
 - **iqr** is the **Inter-Quartile Range**. $$ iqr=q3-q1 $$ 
 - <b>k</b> is the **coefficient** applied to iqr. $$ k>0 $$  
 
-<u>Let's see how IQR detection works with a box plot:</u>
+<u>Let's see how IQR detection works with a box plot:</u>  
+
 ![IQR detection schema.](doc/img/iqr_schema.svg)
   
 <u>Here is the main thing to remember:</u>
@@ -29,8 +30,8 @@ But, according to **your data** or **your use case**, this value may be adapted.
 
 
 <div align="center">
-  <img src="doc/img/iqr_source_wiki.PNG" alt="IQR wikipedia" width="50%" />  
-  <a href="https://en.wikipedia.org/wiki/Interquartile_range"  align="center">Source image: Wikipedia</a></li>  
+  <img src="doc/img/iqr_source_wiki.png" alt="IQR wikipedia" width="50%" />     
+  <a href="https://en.wikipedia.org/wiki/Interquartile_range" align="center">Source image: Wikipedia</a>  
 </div>
 
 ## Practice (with pandas)
@@ -63,7 +64,7 @@ display_multiple_df([data_gaussian, data_extreme, data_gauss_ext])
 ```
 
 
-![png](doc/img/display_inputs.PNG)
+![png](doc/img/display_inputs.png)
 
 
 <u>OBS:</u> Each dataset has a different data distribution.
@@ -125,7 +126,7 @@ display_multiple_df([gaussian_without_outliers, extreme_without_outliers, gauss_
 ```
 
 
-![png](doc/img/display_outputs.PNG)
+![png](doc/img/display_outputs.png)
 
 
 I hope you enjoy this page about IQR outlier detection.
