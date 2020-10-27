@@ -15,7 +15,7 @@ $$ x>q1-k*iqr $$ and $$ x<q3+k*iqr $$
 - <b>k</b> is the **coefficient** applied to iqr. $$ k>0 $$  
 
 <u>Let's see how IQR detection works with a box plot:</u>
-![IQR detection schema.](./../doc/img/iqr_schema.svg)
+<img src="./../doc/img/iqr_schema.svg" alt="IQR detection schema." />
   
 <u>Here is the main thing to remember:</u>
 - Every value under $ q1-k*iqr $ is considered as outliers.
