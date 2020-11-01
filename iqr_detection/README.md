@@ -7,7 +7,7 @@ Here is why IQR may match your requirements for your data science project:
 - **Non-parametric** outlier detection. (If left at its default value K=1.5)
 - **One dimensional** feature space. 
 
-The formula is:
+The formula is: ```math x>Q1-k*IQR```
 ![x>Q1-k*IQR](https://render.githubusercontent.com/render/math?math=x>Q_1-k*IQR) and 
 ![x<Q3+k*IQR](https://render.githubusercontent.com/render/math?math=x<Q_3+k*IQR)        
 <u>with:</u>  
