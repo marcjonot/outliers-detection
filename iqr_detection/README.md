@@ -33,7 +33,7 @@ But, according to **your data** or **your use case**, this value may be adapted.
 
 
 <div align="center">
-  <img src="doc/img/iqr_source_wiki.PNG" alt="IQR wikipedia" width="50%" />     
+  <img src="doc/img/iqr_source_wiki.PNG" alt="IQR wikipedia" width="50%" /><br/>
   <a href="https://en.wikipedia.org/wiki/Interquartile_range" align="center">Source image: Wikipedia</a>  
 </div>
 
