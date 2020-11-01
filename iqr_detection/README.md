@@ -7,22 +7,21 @@ Here is why IQR may match your requirements for your data science project:
 - **Non-parametric** outlier detection. (If left at its default value K=1.5)
 - **One dimensional** feature space. 
 
-The formula is: ```math x>Q1-k*IQR```
-![x>Q1-k*IQR](https://render.githubusercontent.com/render/math?math=x>Q_1-k*IQR) and 
-![x<Q3+k*IQR](https://render.githubusercontent.com/render/math?math=x<Q_3+k*IQR)        
-<u>with:</u>  
+The formula is: `x > Q1 - k*IQR` and `x < Q3 + k*IQR`  
+  
+<u>with:</u> 
 - **Q1** is the **first quartile** of the data. (25% of the data are between the minimum and Q1). 
 - **Q3** is the **third quartile** of the data. (75% of the data are between the minimum and Q3).
-- **IQR** is the **Inter-Quartile Range**. ![IQR=Q3-Q1](https://render.githubusercontent.com/render/math?math=IQR=Q_3-Q_1) 
-- <b>k</b> is the **coefficient** applied to IQR. [k>0](https://render.githubusercontent.com/render/math?math=k>0)  
+- **IQR** is the **Inter-Quartile Range**. `IQR = Q3 - Q1` 
+- <b>k</b> is the **coefficient** applied to IQR. `k > 0`  
 
 <u>Let's see how IQR detection works with a box plot:</u>  
 
 ![IQR detection schema.](doc/img/iqr_schema.svg)
   
 <u>Here is the main thing to remember:</u>
-- Every value under ![x>Q1-k*IQR](https://render.githubusercontent.com/render/math?math=x>Q_1-k*IQR) is considered as outliers.
-- Every value over ![x<Q3+k*IQR](https://render.githubusercontent.com/render/math?math=x<Q_3+k*IQR) is considered as outliers.
+- Every value under !`x > Q1 - k*IQR` is considered as outliers.
+- Every value over !`x < Q3 + k*IQR` is considered as outliers.
 - If **k increase**, outliers range decreased. Then, there is **less** value considered as an **outlier**.
 - If **k decrease**, outliers range increased. Then, there is **more** value considered as an **outlier**.  
 
