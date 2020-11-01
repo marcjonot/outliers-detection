@@ -17,11 +17,13 @@ The formula is: `x > Q1 - k*IQR` and `x < Q3 + k*IQR`
 
 <u>Let's see how IQR detection works with a box plot:</u>  
 
-![IQR detection schema.](doc/img/iqr_schema.svg)
+<p align="center">
+  <img alt="IQR detection schema." src="doc/img/iqr_schema.svg">
+</p>
   
 <u>Here is the main thing to remember:</u>
-- Every value under !`x > Q1 - k*IQR` is considered as outliers.
-- Every value over !`x < Q3 + k*IQR` is considered as outliers.
+- Every value under `x > Q1 - k*IQR` is considered as outliers.
+- Every value over `x < Q3 + k*IQR` is considered as outliers.
 - If **k increase**, outliers range decreased. Then, there is **less** value considered as an **outlier**.
 - If **k decrease**, outliers range increased. Then, there is **more** value considered as an **outlier**.  
 
@@ -31,7 +33,7 @@ But, according to **your data** or **your use case**, this value may be adapted.
 
 
 <div align="center">
-  <img src="doc/img/iqr_source_wiki.png" alt="IQR wikipedia" width="50%" />     
+  <img src="doc/img/iqr_source_wiki.PNG" alt="IQR wikipedia" width="50%" />     
   <a href="https://en.wikipedia.org/wiki/Interquartile_range" align="center">Source image: Wikipedia</a>  
 </div>
 
