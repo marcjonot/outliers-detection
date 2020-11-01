@@ -1,3 +1,5 @@
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js? config=TeX-MML-AM_CHTML" </script>
+
 # IQR outlier detection
 ## Overview
 The IQR outlier detection is a **concept in statistics to remove anomalies/outliers** in your data.  
@@ -7,7 +9,8 @@ Here is why IQR may match your requirements for your data science project:
 - **One dimensional** feature space. 
 
 The formula is:  
-$'x>q1-k*iqr '$ and $' x<q3+k*iqr '$
+![x>q1-k*iqr](https://render.githubusercontent.com/render/math?math=x>q1-k*iqr) and 
+![x<q3+k*iqr](https://render.githubusercontent.com/render/math?math=x<q3+k*iqr)
 <u>with:</u>  
 - **q1** is the **first quartile** of the data. (25% of the data are between the minimum and q1). 
 - **q3** is the **third quartile** of the data. (75% of the data are between the minimum and q3).
